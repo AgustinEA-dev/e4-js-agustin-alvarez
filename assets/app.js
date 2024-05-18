@@ -1,3 +1,4 @@
+
 // fetch
 
 
@@ -25,6 +26,9 @@ button.addEventListener('click', () => {
         <img src="${data.sprites.other.dream_world.front_default}">
         </div>`
             })
+            .then(setTimeout(() => {
+                location.reload()
+            }, 5000))
             .catch((error) => {
                 if (error) {
                     body.innerHTML += `<p>¡Ese pokemon no existe!</p>`
